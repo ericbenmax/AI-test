@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>林攝影 Lin Photography | 人像・婚禮・城市攝影師</title>
+<meta name="description" content="林攝影,專注於人像、婚禮與城市街拍的自由攝影師,以自然光影記錄真實情感。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 導覽列 -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <a href="#home" class="logo">林攝影<span>.</span></a>
+    <nav class="nav-desktop">
+      <a href="#home">首頁</a>
+      <a href="#about">關於</a>
+      <a href="#work">作品集</a>
+      <a href="#services">服務項目</a>
+      <a href="#contact">聯絡</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#home">首頁</a>
+    <a href="#about">關於</a>
+    <a href="#work">作品集</a>
+    <a href="#services">服務項目</a>
+    <a href="#contact">聯絡</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">PORTRAIT · WEDDING · STREET</p>
+    <h1>用光影<br>說一個故事</h1>
+    <p class="hero-sub">嗨,我是林知遠,一位以自然光與真實情感為核心的攝影師。</p>
+    <a href="#work" class="btn btn-outline">觀看作品集</a>
+  </div>
+  <a href="#about" class="scroll-hint" aria-label="向下捲動">
+    <span></span>
+  </a>
+</section>
+
+<!-- About -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1531891437562-4301cf35b7e4?q=80&w=1000&auto=format&fit=crop" alt="攝影師林知遠工作照">
+    </div>
+    <div class="about-text">
+      <p class="section-eyebrow">ABOUT ME</p>
+      <h2>你好,我是林知遠</h2>
+      <p>從事攝影超過八年,足跡橫跨台北、東京與清邁。我相信最動人的畫面往往發生在不經意的瞬間——一個眼神、一次牽手、風吹過髮梢的角度。</p>
+      <p>我的拍攝風格偏好自然光與低干預的引導方式,希望每一張照片都能誠實地留下你當下的樣子,而不是被過度雕琢的表演。</p>
+      <div class="about-stats">
+        <div class="stat">
+          <span class="stat-num">8+</span>
+          <span class="stat-label">年拍攝經驗</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">260+</span>
+          <span class="stat-label">婚禮紀錄</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">1200+</span>
+          <span class="stat-label">人像拍攝</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio -->
+<section class="work" id="work">
+  <p class="section-eyebrow center">PORTFOLIO</p>
+  <h2 class="section-title center">精選作品</h2>
+
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">全部</button>
+    <button class="filter-btn" data-filter="portrait">人像</button>
+    <button class="filter-btn" data-filter="wedding">婚禮</button>
+    <button class="filter-btn" data-filter="street">城市街拍</button>
+    <button class="filter-btn" data-filter="landscape">風景</button>
+  </div>
+
+  <div class="gallery" id="gallery">
+    <figure class="gallery-item" data-cat="portrait">
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=900&auto=format&fit=crop" alt="人像攝影作品一" loading="lazy">
+      <figcaption>靜謐 · 人像</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="wedding">
+      <img src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=900&auto=format&fit=crop" alt="婚禮攝影作品一" loading="lazy">
+      <figcaption>誓言 · 婚禮</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="street">
+      <img src="https://images.unsplash.com/photo-1480796927426-f609979314bd?q=80&w=900&auto=format&fit=crop" alt="城市街拍作品一" loading="lazy">
+      <figcaption>雨後台北 · 街拍</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="portrait">
+      <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=900&auto=format&fit=crop" alt="人像攝影作品二" loading="lazy">
+      <figcaption>光之側臉 · 人像</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="wedding">
+      <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?q=80&w=900&auto=format&fit=crop" alt="婚禮攝影作品二" loading="lazy">
+      <figcaption>擁抱 · 婚禮</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="street">
+      <img src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?q=80&w=900&auto=format&fit=crop" alt="城市街拍作品二" loading="lazy">
+      <figcaption>霓虹夜 · 街拍</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="portrait">
+      <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=900&auto=format&fit=crop" alt="人像攝影作品三" loading="lazy">
+      <figcaption>晨光 · 人像</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="wedding">
+      <img src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?q=80&w=900&auto=format&fit=crop" alt="婚禮攝影作品三" loading="lazy">
+      <figcaption>戒指 · 婚禮</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="street">
+      <img src="https://images.unsplash.com/photo-1444723121867-7a241cacace9?q=80&w=900&auto=format&fit=crop" alt="城市街拍作品三" loading="lazy">
+      <figcaption>巷弄 · 街拍</figcaption>
+    </figure>
+    <figure class="gallery-item" data-cat="landscape">
+      <img src="images/mt-fuji-lake.jpg" alt="富士山湖畔風景" loading="lazy">
+      <figcaption>湖畔富士 · 風景</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- Services -->
+<section class="services" id="services">
+  <p class="section-eyebrow center">SERVICES</p>
+  <h2 class="section-title center">服務項目與價格</h2>
+  <div class="service-grid">
+    <div class="service-card">
+      <h3>個人形象寫真</h3>
+      <p class="price">NT$ 4,800 起</p>
+      <ul>
+        <li>2 小時拍攝</li>
+        <li>1 個場景 / 造型</li>
+        <li>20 張精修照片</li>
+        <li>線上交件,7 個工作天</li>
+      </ul>
+      <a href="#contact" class="btn btn-line">立即預約</a>
+    </div>
+    <div class="service-card featured">
+      <span class="badge">最受歡迎</span>
+      <h3>婚禮紀錄全日</h3>
+      <p class="price">NT$ 32,000 起</p>
+      <ul>
+        <li>8 小時雙機拍攝</li>
+        <li>捕捉迎娶、儀式、宴客全程</li>
+        <li>600 張以上精修照片</li>
+        <li>贈送精裝相本乙本</li>
+      </ul>
+      <a href="#contact" class="btn btn-line">立即預約</a>
+    </div>
+    <div class="service-card">
+      <h3>情侶 / 婚紗寫真</h3>
+      <p class="price">NT$ 9,800 起</p>
+      <ul>
+        <li>3 小時拍攝,2 個場景</li>
+        <li>提供服裝造型建議</li>
+        <li>40 張精修照片</li>
+        <li>線上交件,10 個工作天</li>
+      </ul>
+      <a href="#contact" class="btn btn-line">立即預約</a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <p class="section-eyebrow center">TESTIMONIALS</p>
+  <h2 class="section-title center">客戶怎麼說</h2>
+  <div class="testimonial-track">
+    <blockquote>
+      <p>「知遠很懂得抓住我們最自然的表情,完全不會有擺拍的尷尬感,收到照片那天感動到哭。」</p>
+      <cite>— Emily & Kai,婚禮客戶</cite>
+    </blockquote>
+    <blockquote>
+      <p>「原本很怕拍照,但整個過程被引導得很輕鬆,成品完全超出預期!」</p>
+      <cite>— 小雨,個人寫真</cite>
+    </blockquote>
+    <blockquote>
+      <p>「專業度很高,溝通順暢,交件速度也很快,強力推薦。」</p>
+      <cite>— 陳先生,商業形象照</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <p class="section-eyebrow">CONTACT</p>
+      <h2>一起記錄<br>你的故事</h2>
+      <p class="contact-desc">無論是人像、婚禮或商業拍攝需求,歡迎與我聯繫討論細節與檔期。</p>
+      <ul class="contact-list">
+        <li><span>Email</span> hello@linphotography.tw</li>
+        <li><span>Phone</span> 0912-345-678</li>
+        <li><span>Studio</span> 台北市大安區安和路一段 88 號</li>
+      </ul>
+      <div class="social-links">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="behance">Behance</a>
+      </div>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="form-row">
+        <label for="name">姓名</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-row">
+        <label for="type">拍攝類型</label>
+        <select id="type" name="type">
+          <option>人像寫真</option>
+          <option>婚禮紀錄</option>
+          <option>情侶 / 婚紗</option>
+          <option>商業拍攝</option>
+          <option>其他</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="message">需求說明</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-solid">送出詢問</button>
+      <p class="form-note" id="formNote"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>© 2026 Lin Photography 林攝影. All rights reserved.</p>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="關閉">&times;</button>
+  <button class="lightbox-prev" id="lightboxPrev" aria-label="上一張">&#10094;</button>
+  <img src="" alt="" id="lightboxImg">
+  <button class="lightbox-next" id="lightboxNext" aria-label="下一張">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
