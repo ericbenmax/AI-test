@@ -83,11 +83,32 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'ArrowRight') lightboxNext.click();
 });
 
-// Contact form (demo only — no backend wired up)
+// Contact form -> Supabase (registrations table)
+const SUPABASE_URL = 'https://kzophoukfmdstjfjhyfq.supabase.co';
+const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_z_xwe4U9l8KBjVyDvB1arA_EefD8HJZ';
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
 const contactForm = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
-contactForm.addEventListener('submit', (e) => {
+contactForm.addEventListener('submit', async (e) => {
   e.preventDefault();
-  formNote.textContent = '感謝來信!我會盡快與您聯繫。(此表單尚未串接後端,請記得接上 Email 服務)';
+  const submitBtn = contactForm.querySelector('button[type="submit"]');
+  submitBtn.disabled = true;
+  formNote.textContent = '送出中…';
+
+  const { error } = await supabaseClient.from('registrations').insert({
+    name: contactForm.name.value,
+    email: contactForm.email.value,
+    shoot_type: contactForm.type.value,
+    message: contactForm.message.value,
+  });
+
+  submitBtn.disabled = false;
+  if (error) {
+    console.error(error);
+    formNote.textContent = '送出失敗,請稍後再試或直接以 Email 聯繫。';
+    return;
+  }
+  formNote.textContent = '感謝來信!我會盡快與您聯繫。';
   contactForm.reset();
 });
